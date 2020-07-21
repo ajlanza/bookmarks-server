@@ -23,7 +23,7 @@ app.use(cors());
 //   next()
 // });
 
-app.use(bookmarksRouter);
+app.use('/bookmarks', bookmarksRouter);
 app.get('/', (req,res) => {
   res.send('Hello, world!')
 });
